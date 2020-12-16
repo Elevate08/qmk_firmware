@@ -21,6 +21,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #    include <string.h>
 
+__attribute__((__aligned__(16))) DmacDescriptor dmac_desc;
+__attribute__((__aligned__(16))) DmacDescriptor dmac_desc_wb;
+
 // From keyboard
 #    include "config.h"
 #    include "config_led.h"
